@@ -27,8 +27,8 @@ pub fn mean(nums: &[f64]) -> Option<f64> {
     unimplemented!("no mean yet")
 }
 
-/// Standard deviation of input values. The standard
-/// deviation of an empty list is undefined.
+/// Population standard deviation of input values. The
+/// standard deviation of an empty list is undefined.
 ///
 /// # Examples:
 ///

@@ -9,7 +9,7 @@ The program outputs one of the following statistics as the
 text of a floating-point number on stdout.
 
 * `--mean`: Arithmetic Mean
-* `--stddev`: Standard Deviation
+* `--stddev`: Population Standard Deviation
 * `--median`: Median
 * `--l2`: Euclidean Norm
 
