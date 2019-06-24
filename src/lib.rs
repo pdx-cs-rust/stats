@@ -59,6 +59,11 @@ pub fn stddev(nums: &[f64]) -> Option<f64> {
 /// assert_eq!(Some(0.0), median(&[0.0, 0.5, -1.0, 1.0]));
 /// ```
 pub fn median(nums: &[f64]) -> Option<f64> {
+    // Make a sorted copy of the input floats.
+    let mut nums = nums.to_owned();
+    // https://users.rust-lang.org/t/how-to-sort-a-vec-of-floats/2838/2
+    nums.sort_by(|a, b| a.partial_cmp(b).unwrap());
+
     unimplemented!("no median yet")
 }
 
@@ -73,7 +78,7 @@ pub fn median(nums: &[f64]) -> Option<f64> {
 /// ```
 /// ```
 /// # use stats::*;
-/// assert_eq!(Some(0.5), l2(&[-1.0, 1.0]));
+/// assert_eq!(Some(5.0), l2(&[-3.0, 4.0]));
 /// ```
 pub fn l2(nums: &[f64]) -> Option<f64> {
     unimplemented!("no l2 yet")
